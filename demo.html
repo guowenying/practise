@@ -1,0 +1,25 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>在标题栏显示分时问候语</title>
+</head>
+<body>
+	<script language="javascript">
+	var now=new Date();
+	var hour=now.getHours()//提取系统的小时值
+	if(hour<6)
+		{document.title="凌晨好！";}
+	else if(hour<9) {document.title="早上好！";}
+	else if(hour<12) {document.title="上午好！";}
+	else if(hour<14) {document.title="中午好！";}
+	else if(hour<17) {document.title="下午好！";}
+	else if(hour<19) {document.title="傍晚好！";}
+	else if(hour<22) {document.title="晚上好！";}
+	else document.title="夜里好";
+	
+
+	</script>
+</body>
+
+</html>
